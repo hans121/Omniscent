@@ -1,63 +1,75 @@
 <ion-nav-view>
-<ion-content scroll="false"  style="background: url('content/img/interactive-home.png');
-    background-size: 100%;
-    background-color: black;">
-  <div style="    background: url('content/img/interactive-header.png') no-repeat;
-    background-size: 100%;
-    width: 90%;
-    height: 500px;
-    opacity: 1;
-    left : 5%;
-    position: absolute;
-    z-index: 10;">
-  </div>
-  <div style="    background: url('content/img/interactive-map.png') no-repeat;
-    background-size: 100%;
-    height: 500px;
-    opacity: 1;
-    margin: 0 auto;
-    top: 30%;
-    position: absolute;
-    width: 100%;
-    z-index: 5;">
-  </div>
-  <div style="    background: url('content/img/interactive-footer.png') no-repeat;
-    background-size: 100%;
-    height: 30px;
-    opacity: 1;
-    margin: 0 auto;
-    bottom: 0px;
-    position: absolute;
-    width: 100%;
-    z-index: 5;">
-  </div>
+  <ion-content scroll="false"  style="background: url('content/img/interactive-home.png');
+      background-size: 100%;
+      background-color: black;">
+    <div style="    background: url('content/img/interactive-header.png') no-repeat;
+      background-size: 100%;
+      width: 90%;
+      height: 500px;
+      opacity: 1;
+      left : 5%;
+      position: absolute;
+      z-index: 10;">
+    </div>
+    <div style="    background: url('content/img/interactive-map.png') no-repeat;
+      background-size: 100%;
+      height: 500px;
+      opacity: 1;
+      margin: 0 auto;
+      top: 30%;
+      position: absolute;
+      width: 100%;
+      z-index: 5;">
+    </div>
+    <div style="    background: url('content/img/interactive-footer.png') no-repeat;
+      background-size: 100%;
+      height: 30px;
+      opacity: 1;
+      margin: 0 auto;
+      bottom: 0px;
+      position: absolute;
+      width: 100%;
+      z-index: 5;">
+    </div>
 
 
-  <div style="    background: url('content/img/play-1.png') no-repeat;
-    background-size: auto 100%;
-    height: 50px;
-    width: 60%;
-    position: absolute;
-    top: 55%;
-    left: 20%;
-    z-index: 99;">
-    <timer interval="500">
-    <div style="margin-left: 20px;
-    width: 90%;
-    height: 10px;
-    position: absolute;
-    bottom: 0px;
+    <div style="    background: url('content/img/play-1.png') no-repeat;
+      background-size: auto 100%;
+      height: 50px;
+      width: 60%;
+      position: absolute;
+      top: 55%;
+      left: 20%;
+      z-index: 99;">
 
-    background: -webkit-linear-gradient(left, transparent, #888);">
+      <timer>
+      <div style="margin-left: 20px;
+      width: 90%;
+      height: 10px;
+      position: absolute;
+      bottom: 0px;
+      transform : skew(-55deg);
+      background: -webkit-linear-gradient(left, transparent, #888);">
 
-      <div style="
-        height: 10px;
-        background: #999;
-        bottom: 0px;
-        width: {{progres.value}}%;">
+        <div style="
+          height: 10px;
+          background: #999;
+          bottom: 0px;
+          width: {{millis/50}}%;">
+        </div>
+
       </div>
-
-    </div></timer>
-  </div>
-</ion-content>
+        <span style="    color: whitesmoke;
+    text-shadow: 1px 0px 20px white;
+    left: 50px;
+    position: absolute;
+    bottom: 15px;">Loading</span>
+        <span style="    color: whitesmoke;
+    text-shadow: 1px 0px 20px white;
+    right: 0px;
+    position: absolute;
+    bottom: 15px;">{{millis/50|number:0}}%</span>
+      </timer>
+    </div>
+  </ion-content>
 </ion-nav-view>
