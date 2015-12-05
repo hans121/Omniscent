@@ -9,7 +9,7 @@
   function list($scope, $state) {
     /*jshint validthis: true */
     $scope.goOmniscient = function(){
-      $state.go('home')
+      $state.go('login')
     }
 
   }

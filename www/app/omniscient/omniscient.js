@@ -2,17 +2,15 @@
   'use strict';
 
   angular
-    .module('app.list')
-    .controller('list', list);
+    .module('app.omniscient')
+    .controller('omniscient', omniscient);
 
   /* @ngInject */
-  function list($scope, $state) {
+  function omniscient($scope, $state) {
     /*jshint validthis: true */
-    $scope.goOmniscient = function(){
-      $state.go('home')
-    }
+
 
   }
 
-  list.$inject = ['$scope','$state'];
+  omniscient.$inject = ['$scope','$state'];
 })();

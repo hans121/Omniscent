@@ -3,9 +3,9 @@
  */
 angular.module('app')
 .config(function($stateProvider, $urlRouterProvider){
-    $stateProvider.state('list',{
-      url: '/list',
-      templateUrl: 'app/list/list.html',
-      controller : 'list'
+    $stateProvider.state('omniscient',{
+      url: '/omniscient',
+      templateUrl: 'app/omniscient/omniscient.html',
+      controller : 'omniscient'
     })
   })
