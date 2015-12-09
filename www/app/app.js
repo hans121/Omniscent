@@ -1,5 +1,5 @@
 
-angular.module('app', ['ionic','app.home','app.list','app.omniscient','app.login'])
+angular.module('app', ['ionic','app.home','app.list','app.omniscient','app.login','app.omni_main'])
 
 .run(function($ionicPlatform, $state) {
   $ionicPlatform.ready(function() {

@@ -8,7 +8,9 @@
   /* @ngInject */
   function omniscient($scope, $state) {
     /*jshint validthis: true */
-
+    $scope.gomain = function(){
+      $state.go('omni_main');
+    }
 
   }
 
